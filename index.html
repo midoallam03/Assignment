@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Coca Cola 3D APP</title>
+        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript">
+
+var counter = 0;
+
+function swap(selected)
+{
+    document.getElementById('home').style.display = 'none';
+    document.getElementById('coke_zero').style.display = 'none';
+    document.getElementById('fanta').style.display = 'none';
+    document.getElementById('oasis').style.display = 'none';
+
+    document.getElementById(selected).style.display = 'block';
+}
+function changeLook()
+{
+  counter +=1;
+  switch (counter){
+    case 1:
+      document.getElementById('theme').style.backgroundColor = '#273DB4';
+      document.getElementById('header').style.backgroundColor = '#C50900';
+      document.getElementById('footer').style.backgroundColor = '#C50900';
+      break;
+    case 2:
+      document.getElementById('theme').style.backgroundColor = '#44318D';
+      document.getElementById('header').style.backgroundColor = '#00FF00';
+      document.getElementById('footer').style.backgroundColor = '#00FF00';
+      break;
+    case 3:
+      document.getElementById('theme').style.backgroundColor = '#00FF00';
+      document.getElementById('theme').style.backgroundColor = '#FF652F';
+      document.getElementById('theme').style.backgroundColor = '#FF652F';
+      break;
+    default:
+    counter = 0;
+    changeLook();
+
+  }
+}
+</script>        
+
+      
+    </head>
+<body id="theme">
+
+
+    <nav id="header"class="navbar navbar-expand-sm navbar_coca_cola">
+        <div class="container">
+          <div class="logo">
+            <a class="navbar-brand" href="javascript:swap('home')">
+            <h1>1</h1>
+            <h1>oca</h1>
+            <h2>Cola</h2>
+            <h3>Journey</h3>
+            <p>Refreshing the world, one story at a time</p>
+            </a>
+          </div>
+
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:swap('home')">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover"
+                data-placement="bottom" title="About Web 3D Applications" data-content="3DApps is a final year and postgraduate module ...">About</a>
+              </li>
+
+              <!--Dropdown-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="javascript:swap('home')" id="navbardrop" data-toggle="dropdown">
+                    Drinks
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:swap('coke_zero')">Coke</a>
+                    <a class="dropdown-item" href="javascript:swap('fanta')">Fanta</a>
+                    <a class="dropdown-item" href="javascript:swap('oasis')">Oasis</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover"
+                data-placement="bottom" title="Contact" data-content="Mohamed Allam, Sussex University. E-mail: ma2237@sussex.ac.uk">Contact</a>   
+            </li></ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+    
+    <div id="home" class="container-fluid main_contents">
+        <!--NavBar Container-->
+        
+          <div class="container main_contents">
+            <div class="row"> <!-- Main_3D Image or Carousel -->
+              <div class ="col-sm-12">
+                <div id="main_3d_image">
+                    <div id="main_text" class="col-xs-12 col-sm-4">
+                      <div id="title_home"></div>
+                      <div id="subTitle_home"></div>
+                      <div id="description_home"></div>
+                    </div> 
+                </div> 
+              </div>
+            </div>
+      
+            <!-- Row of cards on the grid -->
+            <div class="row">
+              <!-- Coca Cola Column -->
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="javascript:swap('coke_zero')">
+                      <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coke_zero.jpg" alt="Coke_Zero">
+                  </a>
+                  <div class="card-body">
+                      <h3 class="card-title">Coca Cola Zero</h3>
+                      <p class="card-text">It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!</p>    
+                      <a href="https://www.coca-cola.com/gb/en/brands/coca-cola-zero-sugar" class="btn btn-primary">Find out more ...</a>   
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Sprite Column -->
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="javascript:swap('fanta')">
+                      <img class="card-img-top img-fluid img-thumbnail" src="assets/images/fanta.jpg" alt="Fanta">
+                  </a>
+                  <div class="card-body">
+                      <h3 class="card-title">Fanta</h3>
+                      <p class="card-text">It was created in Germany in 1940. Fanta was created during World War II in Nazi Germany by the German Coca-Cola (GmbH) bottling company. Because of the war, there was no shipping between Nazi Germany and the United States.</p>
+                      <a href="https://www.coca-cola.com/gb/en/brands/fanta" class="btn btn-primary">Find out more ...</a>
+                  </div>
+                </div>
+              </div>
+                
+              <!-- Dr Pepper Column -->
+              <div class="col-sm-4">
+                <div class="card">
+                  <a href="javascript:swap('oasis')">
+                      <img class="card-img-top img-fluid img-thumbnail" src="assets/images/Oasis.jpg" alt="Oasis">
+                  </a>
+                  <div class="card-body">
+                      <h3 class="card-title">Oasis</h3>
+                      <p class="card-text">It was originated in France by Volvic in 1966 and was initially distributed under the name 'Pulse', until flagging sales led to a rebrand and its current name 'Oasis'. Oasis is owned by The Coca-Cola Company.</p>
+                      <a href="https://www.coca-cola.com/gb/en/brands/oasis" class="btn btn-primary">Find out more ...</a>
+                  </div>
+                </div>
+              </div>   
+            </div> 
+          </div>
+        
+        
+    </div>
+
+
+
+    <div id="coke_zero" class="container-fluid main_contents" style="display: none;">
+    
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-lg-9">
+              <div class="card text-left">
+
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:swap('coke_zero')">Coke_Zero</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('fanta')">Fanta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('oasis')">Oasis</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="javascript:swap('home')" id="navbardrop" data-toggle="dropdown">
+                        View
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Front</a>
+                        <a class="dropdown-item" href="#">Back</a>
+                        <a class="dropdown-item" href="#">Left</a>
+                        <a class="dropdown-item" href="#">Right</a>
+                      </div>
+                  </li>
+                  </ul>
+                </div>
+
+
+                <div class="card-body">
+                  <h4 class="card-title">Coke Zero X3D Model</h4>
+
+                  <div class="model3D">
+                      <x3d width="">
+                          <scene>
+                              <inline url="coke_scenes\coke_animated.x3d"></inline>
+                          </scene>
+                      </x3d>
+                  </div>
+                  <p class="card-text"> This X3D model of coke zero was created in 3d Max exported in VRML97 and converted to X3D</p>
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                </div>
+              </div>
+            </div>
+          
+          
+          <div class="col-sm-3">
+            <div class="card text-left">
+              <div class="card-header gallery-header"> Gallery</div>
+                <div class="card-body">
+                  <h4 class="card-title">3D Image Gallery</h4>
+                  <div class="gallery" id="gallery_coke"></div>
+                  <p class="card-text">These 3d images of coke, fanta and oasis</p>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                  <div class="card-body">
+                      <h3 class="card-title">Coca Cola</h3>
+                      <p class="card-text"> It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
+                          Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy.
+                          Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.</p>
+                          <a href="https://www.coca-cola.com/gb/en" class="btn btn-primary">Find out more ...</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div id="fanta" class="container-fluid main_contents" style="display: none;">
+    
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-lg-9">
+              <div class="card text-left">
+
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:swap('coke_zero')">Coke Zero</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('fanta')">Fanta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('oasis')">Oasis</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="javascript:swap('home')" id="navbardrop" data-toggle="dropdown">
+                        View
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Front</a>
+                        <a class="dropdown-item" href="#">Back</a>
+                        <a class="dropdown-item" href="#">Left</a>
+                        <a class="dropdown-item" href="#">Right</a>
+                      </div>
+                  </li>
+                  </ul>
+                </div>
+
+
+                <div class="card-body">
+                  <h4 class="card-title">Fanta X3D Model</h4>
+
+                  <div class="model3D">
+                      <x3d>
+                          <scene>
+                              <inline url="fanta_scenes\fanta_animated.x3d"></inline>
+                          </scene>
+                      </x3d>
+                  </div>
+                  <p class="card-text"> This X3D model of Fanta was created in 3d Max exported in VRML97 and converted to X3D</p>
+                  <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
+                  <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <div class="card-header gallery-header"> Gallery</div>
+                  <div class="card-body">
+                    <h4 class="card-title">3D Image Gallery</h4>
+                    <div class="gallery" id="gallery_fanta"></div>
+                    <p class="card-text">These 3d images of coke, fanta and oasis</p>
+                  </div>
+              </div>
+            </div>
+
+      </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                  <div class="card-body">
+                      <h3 class="card-title">Coca Cola</h3>
+                      <p class="card-text"> It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
+                          Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy.
+                          Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.</p>
+                          <a href="https://www.coca-cola.com/gb/en" class="btn btn-primary">Find out more ...</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="oasis" class="container-fluid main_contents" style="display: none;">
+    
+        <div class="row">
+            <div class="col-xs-9 col-sm-9 col-lg-9">
+              <div class="card text-left">
+
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="javascript:swap('coke_zero')">Coke_Zero</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('fanta')">Fanta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:swap('oasis')">Oasis</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="javascript:swap('home')" id="navbardrop" data-toggle="dropdown">
+                        View
+                      </a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Front</a>
+                        <a class="dropdown-item" href="#">Back</a>
+                        <a class="dropdown-item" href="#">Left</a>
+                        <a class="dropdown-item" href="#">Right</a>
+                      </div>
+                  </li>
+                  </ul>
+                </div>
+
+
+                <div class="card-body">
+                  <h4 class="card-title">Oasis X3D Model</h4>
+
+                  <div class="model3D">
+                      <x3d id="x3dElement" >
+                          <scene>
+                              <inline url="oasis_scenes/oasis_animated.x3d"></inline>
+
+                          </scene>
+                      </x3d>
+                  </div>
+                  <p class="card-text"> This X3D model of Oasis was created in 3d Max exported in VRML97 and converted to X3D</p>
+                  <button class="btn btn-primary btn-responsive camera-font"onclick="changeViewpoint1()">Viewpoint 1</button>
+                  <button class="btn btn-secondary btn-responsive camera-font"onclick="changeViewpoint2()">Viewpoint 2</button>
+                  <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
+                  <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="col-sm-3">
+              <div class="card text-left">
+                <div class="card-header gallery-header"> Gallery</div>
+                  <div class="card-body">
+                    <h4 class="card-title">3D Image Gallery</h4>
+                    <div class="gallery" id="gallery_oasis"></div>
+                    <p class="card-text">These 3d images of coke, fanta and oasis</p>
+                  </div>
+              </div>
+            </div>
+
+      </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card">
+                  <div class="card-body">
+                      <h3 class="card-title">Coca Cola History</h3>
+                      <p class="card-text"> It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.
+                          Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy.
+                          Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.</p>
+                          <a href="https://www.coca-cola.com/gb/en" class="btn btn-primary">Find out more ...</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm footer">
+        <div class="container">
+          <div class="navbar-text float-left copyright">
+            <p><span class="align-baseline"></span>&copy Mobile Web 3D Applications </span></p>
+          </div>
+
+          <input type="button" value="restyle" onclick="changeLook()" style="background-color: blue;" />
+
+          <div class="navbar-text social">
+            <a href="#"><i class="fa fa-github-square fa-2x fa-pull-right"></i></a>
+            <a href="#"><i class="fa fa-google-plus-square fa-2x fa-pull-right"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-2x fa-pull-right"></i></a>
+            <a href="#"><i class="fa fa-facebook-square fa-2x fa-pull-right"></i></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="contactModal">
+      </div>
+
+
+      <script type="text/javascript">
+    function changeViewpoint1() {
+        var browser = X3DFields.browser.getBrowser();
+        var viewpoint = browser.getScene().getNamedItem("Camera001");
+        browser.currentViewpoint = viewpoint;
+    }
+
+    function changeViewpoint2() {
+        var browser = X3DFields.browser.getBrowser();
+        var viewpoint = browser.getScene().getNamedItem("Camera002");
+        browser.currentViewpoint = viewpoint;
+    }
+
+    function changeViewpoint3() {
+        var browser = X3DFields.browser.getBrowser();
+        var viewpoint = browser.getScene().getNamedItem("Camera003");
+        browser.currentViewpoint = viewpoint;
+    }
+</script>
+
+
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+        <link rel="stylesheet" href="x3dom-1.8.2\x3dom.css">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="gallery/scripts/gallery_generator.js"></script>
+        <script src="x3dom-1.8.2/x3dom.js"></script>
+        <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.5.2-web/css/fontawesome.min.css">
+        <script src="model/getJsonData.js"></script>
+      </body>
+</html>

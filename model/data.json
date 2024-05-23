@@ -1,0 +1,53 @@
+{
+    "pageTextData": [
+		{
+			"title": "Coca Cola Great Britain",
+			"subTitle": "Founded in 1886 Dr John S Pemberton",		
+			"description": "The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands."
+		},
+		{
+			"title": "Coca Cola Zero",
+			"subTitle": "New York Harbour, 1886",		
+			"description": "The drink was introduced in 2005 as Coca-Cola Zero as a new no-calorie cola. In 2017, the formula was modified and the name updated, a change which led to some backlash. Another formula change occurred in the United Kingdom in July 2021, in the United States in August 2021, and in Canada in September 2021.!"
+		},
+		{
+			"title": "Fanta",
+			"subTitle": "Germany, 1940",		
+			"description": "It was created in Germany in 1940. Fanta was created during World War II in Nazi Germany by the German Coca-Cola (GmbH) bottling company. Because of the war, there was no shipping between Nazi Germany and the United States."
+		},
+		{
+			"title": "Oasis",
+			"subTitle": "France, 1966",		
+			"description": "It was originated in France by Volvic in 1966 and was initially distributed under the name 'Pulse', until flagging sales led to a rebrand and its current name 'Oasis'. Oasis is owned by The Coca-Cola Company."
+		},
+		{
+			"x3dModelTitle": "Coca Cola X3D Model",
+			"x3dCreationMethod": "This X3D model of the coke can has been created in 3ds Max, exported to VRML97 and converted, using aopt command panel, to X3D for display online.",
+			"title": "History of Coca Cola",
+			"subTitle": "Atlanta Beginnings",		
+			"description": "It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass."
+		},
+		{
+			"x3dModelTitle": "Fanta X3D Model",
+			"x3dCreationMethod": "This X3D model of the fabta bottle has been created in 3ds Max, exported to VRML97 and converted, using aopt command panel, to X3D for display online.",
+			"title": "Fanta — Fanta Klare Zitrone",
+			"subTitle": "First introduced in 1940",		
+			"description": "Fanta Orange is a tongue-tingling & delicious sparkling orange fruit drink that surprises with its intense and refreshing orange taste. This playful fizzy fruit flavoured soda, delivers a bold and bubbly mouthfeel and naturally stimulates senses."
+		},
+        {
+			"x3dModelTitle": "Oasis X3D Model",
+			"x3dCreationMethod": "This X3D model of the pepper cup has been created in 3ds Max, exported to VRML97 and converted, using aopt command panel, to X3D for display online.",
+			"title": "Oasis — Liquid Sunshine",
+			"subTitle": "23 fruit flavours",		
+			"description": "he drink is described as a fruit juice drink - with sugar and sweeteners. In May 2013, Oasis was imported to stores and supermarkets around the Ivory Coast, and by the end of 2013, Oasis was imported to stores and supermarkets around Madagascar."
+		},
+		{
+			"galleryTitle": "3D Images",
+			"galleryDescription": "These 3D images of the Coke can, Fanta can and Oasis bottle are rendered in 3ds Max 2017 with Mental Ray"
+		},
+		{
+			"CameraTitle": "Camera Views",
+			"CameraSubtitle": "These buttons select a range of X3D model viewpoints"
+		}
+	]
+}
